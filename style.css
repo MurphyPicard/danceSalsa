@@ -1,0 +1,32 @@
+/*body has inline style*/
+
+.lll{
+  background-color: #a0a;
+  width: 100%;
+}
+.pull-left h1{
+  color: #FFF;
+}
+.navbar-text a{
+  color: #FFF;
+  font-size: 2em;
+}
+
+article{
+  width: 100%;
+  text-align: center;
+}
+
+.mainHeader {
+  color: purple;
+  font-style: oblique;
+  /*background-color: purple;*/
+}
+.mainHeader .title{
+  font-size: 1.5em;
+}
+.subHeader {
+  color: purple;
+  font-style: oblique;
+  /*background-color: purple;*/
+}
