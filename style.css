@@ -4,13 +4,18 @@
   background-color: #a0a;
   width: 100%;
 }
-.pull-left h1{
+.pull-left h1 a{
   color: #FFF;
+  font-size: .6em;
 }
 .navbar-text a{
   color: #FFF;
-  font-size: 2em;
+  font-size: 1.2em;
 }
+@media <media-query-list> {
+  <group-rule-body>
+}
+
 
 article{
   width: 100%;
@@ -18,15 +23,13 @@ article{
 }
 
 .mainHeader {
+  font: 400 60px/1.3 'Arizonia', Helvetica, sans-serif;
   color: purple;
-  font-style: oblique;
-  /*background-color: purple;*/
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
-.mainHeader .title{
-  font-size: 1.5em;
-}
+
 .subHeader {
+  font: 400 60px/1.3 'Arizonia', Helvetica, sans-serif;
   color: purple;
-  font-style: oblique;
-  /*background-color: purple;*/
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
