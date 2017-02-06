@@ -4,6 +4,11 @@
   background-color: #a0a;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+    .lll {
+        height: 18%;
+    }
+}
 .pull-left h1 a{
   color: #FFF;
   font-size: .6em;
@@ -12,9 +17,7 @@
   color: #FFF;
   font-size: 1.2em;
 }
-@media <media-query-list> {
-  <group-rule-body>
-}
+
 
 
 article{
