@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Learn to Dance</title>
+    <title>MannysDanceClass</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
@@ -44,12 +44,19 @@
     </article>
 
     <br>
-    <div id="home">
 
-      <h1>.</h1>
-      <h1>this is home</h1>
-      <img src="./images/pink_pants_image.jpg" alt="dancing pic">
-    </div>
+
+
+
+    <div class="lots">
+
+      <div id="home" class="home">
+        <h1>.</h1>
+        <h1 class="home-words">this is home</h1>
+        <img class="first-image" src="./images/pink_pants_image.jpg" alt="dancing pic">
+      </div>
+
+
 <br>
 <br>
 <br>
@@ -120,7 +127,15 @@
     <div id="signup">
       <h1></h1>
       <h1></h1>
-      <h1>this is signup</h1>
+      <h1>SignUp</h1>
+      <form class="signup-form" action="#home" method="post">
+        <input type="text" name="firstName"   placeholder="First Name"   value=""><br>
+        <input type="text" name="lastName"    placeholder="Last Name"    value=""><br>
+        <input type="text" name="phoneNumber" placeholder="Phone Number" value=""><br>
+        <input type="text" name="email"       placeholder="Email"        value=""><br>
+        <input type="text" name="message"     placeholder="Have Fun"     value=""><br>
+        <input type="submit" name="submitButton" placeholder="ara button"value="Join the list!">
+      </form>
     </div>
     <br>
     <br>
@@ -183,6 +198,7 @@
     <br>
     <br>
     <h1>bottom</h1>
+  </div>
     <script src="./app.js" charset="utf-8"></script>
   </body>
 
