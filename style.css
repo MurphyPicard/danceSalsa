@@ -1,8 +1,10 @@
 /*body has inline style*/
 
 .lll{
-  background-color: #a0a;
+  background-color: rgba(170,0,170,.5);
+  /*a0a*/
   width: 100%;
+  /*z-index: 1;*/
 }
 @media screen and (max-width: 768px) {
     .lll {
@@ -10,11 +12,11 @@
     }
 }
 .pull-left h1 a{
-  color: #FFF;
+  color: #000;
   font-size: .6em;
 }
 .navbar-text a{
-  color: #FFF;
+  color: #000;
   font-size: 1.2em;
 }
 
