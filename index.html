@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Mannys Webpage</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="./js/dancers.module.js"></script>
@@ -12,22 +12,28 @@
 
   </head>
 
-  <body style="background-color: beige;" ng-controller='dancersCTRL as vm'>
+  <body ng-controller='dancersCTRL as vm'>
 
     <div class="navbar-fixed-top lll">
         <div class="container-fluid">
             <div class="row">
 
-                  <div class="col-xs-6 pull-left">
-                    <h1><a href="#home" class="scroll">Salsa Classes NYC</a></h1>
+                  <div class="col-md-4 pull-left">
+                    <h1><a href="#home" class="scroll salsa-heading">SALSA CLASSES NYC</a></h1>
                   </div>
-
-                  <div class="col-xs-6 pull-right">
+                  <div class="col-md-4">
+                    <a href="https://www.facebook.com">fb</a>
+                    <a href="https://www.google.com">G+</a>
+                    <a href="https://www.youtube.com">YT</a>
+                    <a href="https://www.yelp.com">Yelp</a>
+                  </div>
+                  <div class="col-md-4 pull-right">
                     <nav class="navbar">
                         <div class="container-fluid">
-                            <p class="navbar-text"><a href="#about" class="scroll">About</a></p>
-                            <p class="navbar-text"><a href="#signup" class="scroll">SignUp!</a></p>
-                            <p class="navbar-text"><a href="#other" class="scroll">Other</a></p>
+                            <p class="navbar-text"><a href="#about" class="scroll">ABOUT</a></p>
+                            <p class="navbar-text"><a href="#classes" class="scroll">CLASSES</a></p>
+                            <p class="navbar-text"><a href="#signup" class="scroll">SIGNUP</a></p>
+                            <p class="navbar-text"><a href="#paypal" class="scroll">PAYPAL</a></p>
                         </div>
                     </nav>
                   </div>
@@ -42,7 +48,7 @@
   <br>
   <br>
 
-    <article>
+    <article class="mainAndSubHeader">
       <h1 class="mainHeader">Learn to dance at <strong>Salsa Classes NYC</strong></h1>
       <h2 class="subHeader">It will change your <strong>LIFE!</strong></h2>
       <h1>5 + 9 should equal {{5+9}} if angular is working</h1>
@@ -58,8 +64,10 @@
     <div class="lots">
 
       <div id="home" class="home">
-        <h1>.</h1>
-        <h1 class="home-words">this is home</h1>
+        <h1 class="setHeight"></h1>
+
+
+        <h1 class="home-words">Feel the Music!  HOME</h1>
         <img class="first-image" src="./images/pink_pants_image.jpg" alt="dancing pic">
       </div>
 
@@ -81,6 +89,7 @@
 <br>
 <br>
 <br>
+
 <br>
 <br>
 <br>
@@ -98,9 +107,9 @@
 <br>
     <br>
     <div id="about">
-      <h1>.</h1>
-      <h1>.</h1>
-      <h1>this is about</h1>
+      <h1 class="setHeight"></h1>
+
+      <h1>Love to Move! ABOUT</h1>
       <img src="./images/afro_beat.jpg" alt="dancing pic">
     </div>
     <br>
@@ -117,6 +126,11 @@
     <br>
     <br>
     <br>
+          <div id="classes" class="classes">
+            <h1 class="setHeight"></h1>
+
+            <h1 class="home-words">Start the classes</h1>
+          </div>
     <br>
     <br>
     <br>
@@ -132,8 +146,8 @@
     <br>
     <br>
     <div id="signup">
-      <h1></h1>
-      <h1></h1>
+      <h1 class="setHeight"></h1>
+
       <h1>SignUp</h1>
       <form class="signup-form" action="#home" method="post">
         <input type="text" name="firstName"   placeholder="First Name"   value=""><br>
@@ -179,10 +193,10 @@
     <br>
     <br>
     <br>
-    <div id="other">
-      <h1>.</h1>
-      <h1>.</h1>
-      <h1>this is other</h1>
+    <div id="paypal">
+      <h1 class="setHeight"></h1>
+
+      <h1>Make a payment quick and easy with Paypal</h1>
     </div>
     <br>
     <br>
