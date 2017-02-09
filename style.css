@@ -100,7 +100,15 @@ margin: 10px;
   border-style: solid;
   border-color: black;
 }
-
+.pageDetails{
+  margin: 0 auto;
+  text-align: left;
+  width: 660px;
+  background-color: beige;
+}
+.formDiv{
+  text-align: center;
+}
 .signup-form{
   border-width: 20px;
   /*width: 250px;*/
