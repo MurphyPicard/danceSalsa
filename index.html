@@ -8,15 +8,34 @@
     <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="./js/dancers.module.js"></script>
+    <script src="./js/dancers.factory.js"></script>
     <script src="./js/dancers.controller.js"></script>
+
   </head>
 
   <body ng-controller='dancersCTRL as vm'>
 
+    <div class="navbar-fixed-top lll secondof2navbars">
+        <div class="container-fluid">
+            <div class="row">
+                  <div class="col-md-6 pull-left secondnavcontact">
+                    <h1 class="phone"><img src="https://img.clipartfest.com/b79e9257272ff09329575841f8ace8cd_phone-clip-art-phone-images-clip-art_450-597.png" alt="phone: ">917-651-3476 / 300 West 8th Ave Manhattan</p>
+                  </div>
 
 
-
-
+                  <div class="col-md-6 pull-right secondnavbuttons">
+                    <nav class="navbar">
+                      <div class="container-fluid">
+                        <a class="buttonLinks" href="https://www.facebook.com/salsaclassesnyc"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""></a>
+                        <a class="buttonLinks" href="https://www.google.com/salsaclassesnyc"><img src="http://7108-presscdn-0-78.pagely.netdna-cdn.com/wp-content/uploads/2013/08/google-plus.png" alt=""></a>
+                        <a class="buttonLinks" href="https://www.youtube.com/salsaclassesnyc"><img src="https://lh5.ggpht.com/jZ8XCjpCQWWZ5GLhbjRAufsw3JXePHUJVfEvMH3D055ghq0dyiSP3YxfSc_czPhtCLSO=w300" alt=""></a>
+                        <a class="buttonLinks" href="https://www.yelp.com/slasaclassesnyc"><img src="http://files.www.fleetfeetseattle.com/yelp-395.jpg" alt=""></a>
+                      </div>
+                    </nav>
+                  </div>
+            </div>
+        </div>
+    </div>
 
     <div class="navbar-fixed-top lll">
         <div class="container-fluid">
@@ -26,6 +45,7 @@
                   </div>
                   <div class="col-md-3 twoof4">
                     <h1 class="phone"><img src="https://img.clipartfest.com/b79e9257272ff09329575841f8ace8cd_phone-clip-art-phone-images-clip-art_450-597.png" alt="phone: ">917-651-3476</h1>
+                    <p>300 West 8th Ave Manhattan</p>
                   </div>
                   <div class="col-md-3 threeof4">
                     <a class="buttonLinks" href="https://www.facebook.com/salsaclassesnyc"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""></a>
@@ -116,31 +136,42 @@
       <p> The classes will take place Thursdays from 8pm - 9:30pm
       and Sundays from 4pm - 5:30pm (subject to change) in Midtown Manhattan.
     It is a 1 hour 30 min class with a break in the middle. </p>
+  <hr>
+      <h3>BEGINNER CLASS: </h3>
+            <ul>
+              <li>Learn the basics to get you on the dance floor</li>
+              <li>Learn to do the basic step (On 2)</li>
+              <li>Learn turns and crossovers with a partner</li>
+              <li>Learn shines and solo patterns</li>
+              <li>Learn foot and hand movements for women and men</li>
+              <li>And learn to do it with a smile!</li>
+              <li>No partners needed</li>
+              <li>A relaxing way to meet new friends and get your body moving!</li>
+            </ul>
     </div>
 
     <br>
 
-    <div id="signup">
+    <div id="signup" ng-controller="submitController">
       <h1 class="setHeight"></h1>
       <h1>SignUp</h1>
 
       <div class="pageDetails formDiv">
-        <form class="signup-form" action="#home" method="post">
-          <input type="text" name="firstName"   placeholder="First Name"   value=""><br>
-          <input type="text" name="lastName"    placeholder="Last Name"    value=""><br>
-          <input type="text" name="phoneNumber" placeholder="Phone Number" value=""><br>
-          <input type="text" name="email"       placeholder="Email"        value=""><br>
-          <input type="text" name="message"     placeholder="Have Fun"     value=""><br>
+        <form class="signup-form" ng-submit="submit()" id='signup'>
+          <input type="text" name="firstName"   placeholder="First Name"   value="" ng-model="formData.firstName"   ><br>
+          <input type="text" name="lastName"    placeholder="Last Name"    value="" ng-model="formData.lastName"    ><br>
+          <input type="text" name="phoneNumber" placeholder="Phone Number" value="" ng-model="formData.phoneNumber" ><br>
+          <input type="text" name="email"       placeholder="Email"        value="" ng-model="formData.email"       ><br>
+          <input type="text" name="message"     placeholder="Have Fun"     value="" ng-model="formData.message"     ><br>
           <input type="submit" name="submitButton" placeholder="ara button"value="Join the list!">
         </form>
       </div>
-
     <br>
         <p>double check that angular is working (i did not write any names below)</p>
       <div class="listDancers" ng-repeat="dancer in vm.dancers">
         <p>{{$index + 1}}... {{dancer.firstName}} {{dancer.lastName}}</p>
       </div>
-
+      <p>{{ formData }} FORM DATA IS WORKING</p>
     </div>
 
     <br>
