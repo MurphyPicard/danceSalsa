@@ -1,7 +1,7 @@
 (function(){
   angular
   .module('dancersModule')
-  .controller('dancersCTRL', dancersCTRLfunction)
+  .controller('dancersCTRL', dancersCTRLfunction);
 
   dancersCTRLfunction.$inject = ['$http', '$scope', 'DancerFactory'];
 
@@ -19,14 +19,14 @@
       DancerFactory.get()
                   .then(function(res){
                     DancerFactory.dancers = res.data;
-                      console.log(DancerFactory.dancers);
-                      $scope.dancers = DancerFactory.dancers;
-                      $scope.dancer = undefined;
+                    console.log(DancerFactory.dancers);
+                    $scope.dancers = DancerFactory.dancers;
+                    $scope.dancer = undefined;
                   })
                   .catch(function(err){
                     if(err)console.log(err);
                   });
-      }//getDancers
+      };//getDancers
 
   }//dancersCTRL
 

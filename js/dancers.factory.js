@@ -1,7 +1,7 @@
 (function(){
   angular
-    .module('foodByMood')
-    .factory('DancerFactory', DancerFactory)
+    .module('dancersModule')
+    .factory('DancerFactory', DancerFactory);
 
 
     DancerFactory.$inject = ['$http'];
@@ -12,7 +12,7 @@
         dancers: {},
         get: function(){
           //connecting to a backend
-          return $http.get(`https://localhost:3001`);
+          return $http.get(`https://localhost:3001/api/dancers`);
         }
       };
     }
