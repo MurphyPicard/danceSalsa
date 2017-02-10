@@ -1,8 +1,9 @@
 /*body has inline style*/
 body{
-  background-image: url("./images/afro_beat.jpg");
+  /*background-image: url("./images/afro_beat.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%;*/
+  background-color: beige;
 }
 .lll{
   background-color: rgba(150,64,117,.7);
@@ -69,9 +70,10 @@ margin: 10px;
   .navbar-text A:hover{
   font-size: 1.2em;
   }
-
 }
-
+.buttonLinks img{
+  width: 50px;
+}
 .lots{
   text-align: center;
 }
@@ -104,7 +106,7 @@ margin: 10px;
   margin: 0 auto;
   text-align: left;
   width: 660px;
-  background-color: beige;
+  background-color: #ddd;
 }
 .formDiv{
   text-align: center;
@@ -115,4 +117,9 @@ margin: 10px;
 }
 .setHeight{
   height: 100px;
+}
+.paypalForm{
+  margin: 0 auto;
+  text-align: center;
+
 }
