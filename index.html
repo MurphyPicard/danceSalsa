@@ -165,14 +165,15 @@
 
     <br>
 
-    <div id="paypal">
+
       <h1 class="setHeight"></h1>
-      <h1>Make a payment quick and easy with Paypal</h1>
+      <h1 class="paypalHeading">Make a payment quick & easy - Paypal</h1>
+    <div id="paypal" class="pageDetails pageDetailspaypal">
 
       <form class="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="C25GRFF6X478Q">
-        <table>
+        <table class="paypalPrices" >
           <tr>
             <td>
               <input type="hidden" name="on0" value="ONLINE PRICES">ONLINE PRICES
@@ -180,7 +181,7 @@
           </tr>
           <tr>
             <td>
-              <select name="os0">
+              <select class="paypalPrices"  name="os0">
               <option value="PRIVATE CLASS">PRIVATE CLASS $150.00 USD</option>
               <option value="8WK SESSION">8WK SESSION $240.00 USD</option>
               </select>
@@ -192,21 +193,21 @@
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
 
-    </div>
+
 
     <br>
 
-    <div class="pageDetails">
-      <h3>Prices:</h3>
-      <p>Drop in - $20</p>
-      <p>8 weeks, once per week - $120</p>
-      <p>8 weeks, twice per week - $160</p>
-      <p>Easily pay with any Credit Card via Paypal</p>
+
+      <h3 class="paymentInfo" >Prices:</h3>
+      <p class="paymentInfo" >Drop in - $20</p>
+      <p class="paymentInfo" >8 weeks, once per week - $120</p>
+      <p class="paymentInfo" >8 weeks, twice per week - $160</p>
+      <p class="paymentInfo" >Easily pay with any Credit Card via Paypal</p>
     </div>
     <br>
 
     <h1 class="setHeight"></h1>
-    <h1>bottom</h1>
+    <h1>We can't wait to see you!</h1>
   </div>
     <script src="./js/app.js" charset="utf-8"></script>
   </body>

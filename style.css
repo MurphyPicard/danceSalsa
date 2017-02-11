@@ -155,7 +155,25 @@ margin: 10px;
 .firstHeader{
   height: 140px;
 }
+
+/******PAYPAL******/
+.paypalHeading{
+  font-family: 'Lucida';
+}
+.pageDetailspaypal{
+  width: 44%;
+  border-radius: 30%;
+}
 .paypalForm{
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
+}
+.paypalPrices{
+  text-align: center;
+  margin: auto;
+
+}
+.paymentInfo{
+text-align: center;
+font-family: 'Lucida';
 }
