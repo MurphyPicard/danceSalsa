@@ -10,7 +10,6 @@
     <script src="./js/dancers.module.js"></script>
     <script src="./js/dancers.factory.js"></script>
     <script src="./js/dancers.controller.js"></script>
-
   </head>
 
   <body ng-controller='dancersCTRL as vm'>
@@ -22,14 +21,13 @@
                     <h1 class="phone"><img src="https://img.clipartfest.com/b79e9257272ff09329575841f8ace8cd_phone-clip-art-phone-images-clip-art_450-597.png" alt="phone: ">917-651-3476  /  300 West 8th Ave Manhattan</p>
                   </div>
 
-
                   <div class="col-md-6 pull-right secondnavbuttons buttons1">
                       <div class="container-fluid buttons2">
                         <a class="buttonLinks" href="https://www.facebook.com/salsaclassesnyc"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""></a>
                         <a class="buttonLinks" href="https://www.google.com/salsaclassesnyc"><img src="http://7108-presscdn-0-78.pagely.netdna-cdn.com/wp-content/uploads/2013/08/google-plus.png" alt=""></a>
                         <a class="buttonLinks" href="https://www.youtube.com/salsaclassesnyc"><img src="https://lh5.ggpht.com/jZ8XCjpCQWWZ5GLhbjRAufsw3JXePHUJVfEvMH3D055ghq0dyiSP3YxfSc_czPhtCLSO=w300" alt=""></a>
                         <a class="buttonLinks" href="https://www.yelp.com/slasaclassesnyc"><img src="http://files.www.fleetfeetseattle.com/yelp-395.jpg" alt=""></a>
-                        <p class="bachata-width">Manny</p>
+                        <p class="bachata-width"></p>
                       </div>
                   </div>
             </div>
@@ -62,10 +60,10 @@
     </div>
 
     <h1 class="setHeight firstHeader"></h1>
-    <article class="mainAndSubHeader">
-      <img style="width: 100%;" src="./images/MAIN SALSACLASSESNYC.jpg" alt="main pic">
+    <article class="mainAndSubHeader home" id="home">
+      <img style="width: 100%;" src="./images/mainImageSalsaclassesnyc.jpg" alt="main pic">
       <h1 class="mainHeader"><strong>We offer salsa lessons (ON2 - NYC Style) for students with all levels of experience. You will learn how to dance salsa New York style, sweat, and have fun.</strong></h1>
-      <h2 class="subHeader">It will change your <strong>LIFE!</strong></h2>
+      <h2 class="subHeader">It will change your <strong>Life!</strong></h2>
 
       <h1>5 + 9 should equal {{5+9}} if angular is working</h1>
       <p>16th dancer = {{vm.dancers[0]}}</p>
@@ -75,55 +73,50 @@
 
     <div class="lots">
 
-      <div id="home" class="home">
-
-        <h1 class="setHeight"></h1>
-        <h1 class="home-words">Feel the Music!  HOME</h1>
-        <img class="first-image" src="./images/pink_pants_image.jpg" alt="dancing pic">
-        <h4>This is manny's intro paragraph</h4>
-
-      </div>
 
     <br>
 
     <div id="about">
       <h1 class="setHeight"></h1>
-      <h1>Love to Move! ABOUT</h1>
-      <img src="./images/afro_beat.jpg" alt="dancing pic">
+      <h1></h1>
+      <img style="width: 80%;" src="./images/ABOUTSALSACLASSESNYC.jpg" alt="dancing pic">
     </div>
 
+    <p style="height: 10px;" ></p>
+
     <div class="pageDetails">
-      <p> Thank you for the interest in our salsa program. </p>
-      <p> Even though it is a beginner class a lot of focus will be made on mastering
+      <p class="about-p">
+        'Salsa Classes NYC' draws on Mambo, Afro-Cuban, Latin folklore, jazz,
+        and modern dance when crafting its choreography. With so many
+        influences, the studio's focus might seem muddled. Professional
+        dancer and studio owner Manny Davis, however, has two goals: for the
+        dances to complement the music they're performed too and for every move
+        to come from the dancers' hearts.
+      </p>
+      <p class="about-p">
+        Mission:
+
+        Created, inspirational,  heal through movement as well as the
+        sustainability of the art.
+        Allow people to come and be free in a safe and creative space.
+        Help NYC residents find the best dancer within their-self, while
+        connecting to others in a unique venue.
+      </p>
+      <p class="about-p">
+        Even though it is a beginner class a lot of focus will be made on mastering
         the salsa dance skills also to stretching in the beginning of the class,
         exercises how to keep balance when moving and turning, and one of the most
-        important things is connection to the music and the partner.</p>
+        important things is connection to the music and your partner.
+      </p>
 
-      <p>
-        Please, let us know if you need any further information.
-        BEGINNER CLASS:
-        Learn the basics to get you on the dance floor
-        Learn to do the basic step (On 2)
-        Learn turns and crossovers with a partner
-        Learn shines and solo patterns
-        Learn foot and hand movements for women and men
-        And learn to do it with a smile!
-        No partners needed
-        A relaxing way to meet new friends and get your body moving!
-      </p>
-      <p>
-        We offer salsa lessons (ON2 - NYC Style) for students with all levels of
-        experience. You will learn how to dance salsa New York style, sweat,
-        and have fun.
-      </p>
     </div>
 
     <br>
 
     <div id="classes" class="classes">
       <h1 class="setHeight"></h1>
-      <h1 class="home-words">Start the classes</h1>
-      <img src="./images/facepic1.jpg" alt="dancing pic">
+      <h1 class="home-words"></h1>
+      <img style="width: 80%;" src="./images/CLASSESSALSACLASSESNYC.jpg" alt="CLASSES pic">
 
     </div>
     <br>
@@ -149,7 +142,7 @@
 
     <div id="signup" ng-controller="submitController">
       <h1 class="setHeight"></h1>
-      <h1>SignUp</h1>
+      <h1>Sign Up</h1>
 
       <div class="pageDetails formDiv">
         <form class="signup-form" ng-submit="submit()" id='signup'>
