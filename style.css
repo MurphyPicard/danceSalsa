@@ -141,9 +141,8 @@ margin: 10px;
 .formDiv{
   text-align: center;
 }
-.signup-form{
-  border-width: 20px;
-  /*width: 250px;*/
+.inputform{
+  width: 400px;
 }
 .setHeight{
   height: 100px;

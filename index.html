@@ -153,11 +153,12 @@
 
       <div class="pageDetails formDiv">
         <form class="signup-form" ng-submit="submit()" id='signup'>
-          <input type="text" name="firstName"   placeholder="First Name"   value="" ng-model="formData.firstName"   ><br>
-          <input type="text" name="lastName"    placeholder="Last Name"    value="" ng-model="formData.lastName"    ><br>
-          <input type="text" name="phoneNumber" placeholder="Phone Number" value="" ng-model="formData.phoneNumber" ><br>
-          <input type="text" name="email"       placeholder="Email"        value="" ng-model="formData.email"       ><br>
-          <input type="text" name="message"     placeholder="Have Fun"     value="" ng-model="formData.message"     ><br>
+          <input class="inputform" type="text" name="firstName"   placeholder="First Name"   value="" ng-model="formData.firstName"   ><br>
+          <input class="inputform" type="text" name="lastName"    placeholder="Last Name"    value="" ng-model="formData.lastName"    ><br>
+          <input class="inputform" type="text" name="phoneNumber" placeholder="Phone Number" value="" ng-model="formData.phoneNumber" ><br>
+          <input class="inputform" type="text" name="email"       placeholder="Email"        value="" ng-model="formData.email"       ><br>
+          <input class="inputform" type="text" name="message"     placeholder="Specify private or group classes"     value="" ng-model="formData.message"     ><br>
+          <p>Please specify if you're interested in private or group classes.</p>
           <input type="submit" name="submitButton" placeholder="ara button"value="Join the list!">
         </form>
       </div>
