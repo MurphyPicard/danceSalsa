@@ -13,8 +13,7 @@
   </head>
 
   <body ng-controller='dancersCTRL as vm'>
-
-    <div class="navbar-fixed-top lll secondof2navbars">
+    <div id="home" class="navbar-fixed-top lll secondof2navbars">
         <div class="container-fluid">
             <div class="row">
                   <div class="col-md-6 pull-left secondnavcontact">
@@ -60,7 +59,7 @@
     </div>
 
     <h1 class="setHeight firstHeader"></h1>
-    <article class="mainAndSubHeader home" id="home">
+    <article class="mainAndSubHeader home">
       <img style="width: 100%;" src="./images/mainImageSalsaclassesnyc.jpg" alt="main pic">
       <h1 class="mainHeader"><strong>We offer salsa lessons (ON2 - NYC Style) for students with all levels of experience. You will learn how to dance salsa New York style, sweat, and have fun.</strong></h1>
       <h2 class="subHeader">It will change your <strong>Life!</strong></h2>
@@ -86,11 +85,11 @@
 
     <div class="pageDetails">
       <p class="about-p">
-        'Salsa Classes NYC' draws on Mambo, Afro-Cuban, Latin folklore, jazz,
-        and modern dance when crafting its choreography. With so many
+        Salsa Classes NYC draws on Mambo, Afro-Cuban, Latin folklore, Jazz,
+        and Modern Dance when crafting it's choreography. With so many
         influences, the studio's focus might seem muddled. Professional
         dancer and studio owner Manny Davis, however, has two goals: for the
-        dances to complement the music they're performed too and for every move
+        dances to complement the music they're performed to and for every move
         to come from the dancers' hearts.
       </p>
       <p class="about-p">
@@ -121,28 +120,48 @@
     </div>
     <br>
     <div class="pageDetails">
-      <p> The classes will take place Thursdays from 8pm - 9:30pm
-      and Sundays from 4pm - 5:30pm (subject to change) in Midtown Manhattan.
-    It is a 1 hour 30 min class with a break in the middle. </p>
-  <hr>
+      <p>
+        The group classes are 90 minutes and will take place weeknights and
+        weekends in Midtown Manhattan.  Private classes are 60 minutes and are
+        scheduled as needed.
+      </p>
+      <p>
+        Advance signup is necessary.
+      </p>
+      <p>
+      8-weeks cycle - In this 8-week cycle students will have the opportunity to learn the fundamental steps and turn patterns in salsa. We will simultaneously help you build a strong overall dance foundation. You will improve your balance and posture and learn how to move your body and arms in a controlled but fluid manner. To conclude the cycle, you will learn and perform a mini-salsa choreography. Space is limited, please contact us for availability.
+      </p>
+      <p>
+        LEVEL 1: ABSOLUTE BEGINNER (LEVEL 1)
+        This class is perfectly suited for students with no prior salsa dancing experience. You will familiarize yourself with the music, learn the basic steps and simple combinations performed solo (shines) and with a partner (turn patterns).
+      </p>
+      <p>
+        LEVEL 2: ADVANCED BEGINNER (LEVEL 2) For students who have some prior salsa dance experience or have completed our beginner class. This class will help you master more challenging shines and turn patterns as well as teach you to style and incorporate body movement while dancing.
+      </p>
+      <p>
+        Movement Class -
+        This class teaches Afro-Latin movement, characterized by fluid and expressive motions and a dancer's personal interpretation of the beat. It introduces students to the typical motions of Afro-Cuban and other Latin Folklore styles while providing historical and cultural context.
+        The workshop is a great opportunity to build control over body movement, improve musical and improvisation skills, and to learn to apply this knowledge outside of the classroom and to other forms of dance.
+      </p>
+      <hr>
       <h3>BEGINNER CLASS: </h3>
-            <ul>
-              <li>Learn the basics to get you on the dance floor</li>
-              <li>Learn to do the basic step (On 2)</li>
-              <li>Learn turns and crossovers with a partner</li>
-              <li>Learn shines and solo patterns</li>
-              <li>Learn foot and hand movements for women and men</li>
-              <li>And learn to do it with a smile!</li>
-              <li>No partners needed</li>
-              <li>A relaxing way to meet new friends and get your body moving!</li>
-            </ul>
+        <ul>
+          <li>Learn the basics to get you on the dance floor</li>
+          <li>Learn to do the basic step (On 2)</li>
+          <li>Learn turns and crossovers with a partner</li>
+          <li>Learn shines and solo patterns</li>
+          <li>Learn foot and hand movements for women and men</li>
+          <li>And learn to do it with a smile!</li>
+          <li>No partners needed</li>
+          <li>A relaxing way to meet new friends and get your body moving!</li>
+        </ul>
     </div>
 
     <br>
 
     <div id="signup" ng-controller="submitController">
       <h1 class="setHeight"></h1>
-      <h1>Sign Up</h1>
+      <img src="./images/signup.jpg" alt="signup image">
 
       <div class="pageDetails formDiv">
         <form class="signup-form" ng-submit="submit()" id='signup'>
@@ -150,25 +169,27 @@
           <input class="inputform" type="text" name="lastName"    placeholder="Last Name"    value="" ng-model="formData.lastName"    ><br>
           <input class="inputform" type="text" name="phoneNumber" placeholder="Phone Number" value="" ng-model="formData.phoneNumber" ><br>
           <input class="inputform" type="text" name="email"       placeholder="Email"        value="" ng-model="formData.email"       ><br>
-          <input class="inputform" type="text" name="message"     placeholder="Specify private or group classes"     value="" ng-model="formData.message"     ><br>
-          <p>Please specify if you're interested in private or group classes.</p>
-          <input type="submit" name="submitButton" placeholder="ara button"value="Join the list!">
+          <input class="inputform" type="text" name="message"     placeholder="private or group classes"     value="" ng-model="formData.message"     ><br>
+          <input type="submit" name="submitButton" placeholder="ara button"value="submit">
         </form>
       </div>
-    <br>
-        <p>double check that angular is working (i did not write any names below)</p>
-      <div class="listDancers" ng-repeat="dancer in vm.dancers">
-        <p>{{$index + 1}}... {{dancer.firstName}} {{dancer.lastName}}</p>
-      </div>
-      <p>{{ formData }} FORM DATA IS WORKING</p>
+    <br>        <!--
+                  <p>double check that angular is working (i did not write any names below)</p>
+
+                  <div class="listDancers" ng-repeat="dancer in vm.dancers">
+                    <p>{{$index + 1}}... {{dancer.firstName}} {{dancer.lastName}}</p>
+                  </div>
+
+                  <p>{{ formData }} FORM DATA IS WORKING</p>
+                -->
     </div>
 
     <br>
 
 
-      <h1 class="setHeight"></h1>
+      <h1 id="paypal" class="setHeight"></h1>
       <h1 class="paypalHeading">Make a payment quick & easy - Paypal</h1>
-    <div id="paypal" class="pageDetails pageDetailspaypal">
+    <div class="pageDetails pageDetailspaypal">
 
       <form class="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -198,11 +219,15 @@
     <br>
 
 
-      <h3 class="paymentInfo" >Prices:</h3>
-      <p class="paymentInfo" >Drop in - $20</p>
-      <p class="paymentInfo" >8 weeks, once per week - $120</p>
-      <p class="paymentInfo" >8 weeks, twice per week - $160</p>
-      <p class="paymentInfo" >Easily pay with any Credit Card via Paypal</p>
+      <h3 class="paymentInfo" ></h3>
+          <br>
+      <h4 class="paymentInfo" >Group Classes:</h4>
+      <p class="paymentInfo" >8 weeks consecutive, once per week - $240 total</p>
+          <br>
+      <h4 class="paymentInfo" >Private Lessons:</h4>
+      <p class="paymentInfo" >As scheduled - $150/hour</p>
+          <br>
+      <p class="paymentInfo" ><strong>Easily pay with any Credit Card via Paypal</strong></p>
     </div>
     <br>
 

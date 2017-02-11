@@ -5,6 +5,7 @@ body{
   background-size: 100%;*/
   background-color: #FFF;
 }
+
 /*********************** navbar starts here **********************************/
 .lll{
   background-color: rgba(150, 64, 117, .4);
@@ -145,6 +146,8 @@ margin: 10px;
 
 .formDiv{
   text-align: center;
+  width: 80%;
+  border-radius: 40%;
 }
 .inputform{
   width: 400px;
