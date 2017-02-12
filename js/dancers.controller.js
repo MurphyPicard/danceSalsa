@@ -7,8 +7,6 @@
   .module('dancersModule')
   .controller('submitController', submitCTRLfunction);
 
-
-
   dancersCTRLfunction.$inject = ['$http', '$scope', 'DancerFactory'];
   submitCTRLfunction.$inject = ['$http', '$scope'];
 
@@ -45,7 +43,6 @@
     }//submit
     }//submitCTRLfunction
 
-
   function dancersCTRLfunction($http, $scope, DancerFactory){
     this.dancers = [
       {firstName: 'Abraham', lastName: 'Lincoln'},
@@ -64,7 +61,6 @@
                     if(err)console.log(err);
                   });
       };//getDancers
-
 
   }//dancersCTRL
 

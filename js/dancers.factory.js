@@ -3,9 +3,7 @@
     .module('dancersModule')
     .factory('DancerFactory', DancerFactory);
 
-
     DancerFactory.$inject = ['$http'];
-
 
     function DancerFactory($http) {
       return {
@@ -16,5 +14,4 @@
         }
       };
     }
-
 })();

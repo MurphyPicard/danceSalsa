@@ -148,9 +148,7 @@ margin: 10px;
   margin-bottom: 30px;
 }
 .about-p{
-  /*empty on purpose*/
   width: 70%;
-
 }
 .homeabout{
   text-align: justify;
@@ -193,7 +191,6 @@ margin: 10px;
   border-color: rgba(150, 64, 117, 1);
   border-width: 4px;
   border-style: solid;
-
 }
 .inputform{
   width: 525px;
@@ -222,13 +219,11 @@ margin: 10px;
   margin: auto;
   text-align: center;
 }
-
 .paypalPrices{
   text-align: center;
   margin: auto;
   color: #000;
 }
-
 .paymentInfo{
 text-align: center;
 font-family: 'Lucida Grande';
@@ -239,5 +234,4 @@ color: #FFF;
 }
 .end{
   font-style: italic;
-
 }
