@@ -14,7 +14,7 @@
 
   // function MoodCtrl($http, $scope, MoodFactory) {
   function submitCTRLfunction($http, $scope){
-    $scope.formData = {email: 'youremail@gmail.com'};
+    $scope.formData = {email: ''};
     console.log('http');
     console.log($http);
     console.log('scope.formdata');

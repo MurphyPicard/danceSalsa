@@ -64,38 +64,38 @@ margin: 10px;
 /********* pageLinks ************/
 .navbar-text{
   margin: 0px;
-  margin-right: 8px;
+  margin-right: 7px;
   background-color: none;
 }
 .navbar-text .scroll{
   color: #FFF;
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 700;
   font-family: 'Lucida Grande';
   text-decoration: none;
 }
 @media screen and (max-width: 870px) {
   .navbar-text .scroll{
-  font-size: .7em;
+  font-size: .8em;
   }
 }
 @media screen and (max-width: 770px) {
   .navbar-text .scroll{
-  font-size: .6em;
+  font-size: .7em;
   }
 }
 @media screen and (max-width: 670px) {
   .navbar-text .scroll{
-  font-size: .5em;
+  font-size: .6em;
   }
 }
 .navbar-text A:hover{
   color: #161400;
-  font-size: .82em;
+  font-size: 1.03em;
 }
 @media screen and (max-width: 870px) {
   .navbar-text A:hover{
-  font-size: .7em;
+  font-size: .83em;
   }
 }
 .buttons1{
@@ -112,27 +112,28 @@ margin: 10px;
   text-align: center;
   /*margin: 0 auto;*/
 }
+.homeImage{
+  margin-bottom: 40px;
+}
 
 
 .mainAndSubHeader{
   margin: 0 auto;
   text-align: center;
-  color: rgba(150, 64, 117, .7);
-  width: 75%;
+  color: rgba(22, 20, 00, 1);
+  width: 70%;
 }
 .mainHeader {
-  font: 400 30px/1 'Lucida Grande', Helvetica, sans-serif;
-  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  /*font: 400 20px 'Lucida Grande', Helvetica, sans-serif;*/
+  /*text-shadow: 2px 2px 0px rgba(150, 64, 117, .7);*/
+  /*text-align: justify;*/
 }
-
+/*deleted subheader*/
 .subHeader {
   font: 400 30px/1 'Arizonia', Helvetica, sans-serif;
   text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
-.first-image{
-  border-style: solid;
-  border-color: black;
-}
+
 .pageDetails{
   margin: 0 auto;
   text-align: left;
@@ -142,18 +143,62 @@ margin: 10px;
   border-radius: 5%;
   padding: 5px;
 }
+/* ABOUT stuff*********************/
+.aboutImage{
+  margin-bottom: 30px;
+}
+.about-p{
+  /*empty on purpose*/
+  width: 70%;
 
-
+}
+.homeabout{
+  text-align: justify;
+  margin: auto;
+  font-family: 'Lucida Grande';
+  font-size: 1.3em;
+}
+/****** CLASSES SECTION ***********/
+.classesDetails{
+  margin-top: 30px;
+  border-radius: 0px;
+  background-color: #FFF;
+  border-color: rgba(150, 64, 117, .4);
+  border-width: 8px;
+  border-style: double;
+}
+.classParagraphs{
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+  font-family: "Lucida Grande";
+  color: #000;
+  font-size: 1.3em;
+}
+.signupNecessary{
+  text-align: center;
+  font-weight: 700;
+}
+.ulClasses li{
+  text-align: justify;
+  margin: 0 auto;
+}
+/******* FORM SECTION ********/
 .formDiv{
   text-align: center;
-  width: 80%;
-  border-radius: 40%;
+  width: 60%;
+  border-radius: 3%;
+  background-color: rgba(0, 0, 0, .7);
+  border-color: rgba(150, 64, 117, 1);
+  border-width: 4px;
+  border-style: solid;
+
 }
 .inputform{
-  width: 400px;
+  width: 525px;
 }
 .setHeight{
-  height: 100px;
+  height: 60px;
 }
 .firstHeader{
   height: 140px;
@@ -164,19 +209,30 @@ margin: 10px;
   font-family: 'Lucida';
 }
 .pageDetailspaypal{
-  width: 44%;
-  border-radius: 30%;
+  text-align: center;
+  width: 60%;
+  border-radius: 3%;
+  background-color: rgba(0, 0, 0, .7);
+  border-color: rgba(150, 64, 117, 1);
+  border-width: 4px;
+  border-style: solid;
 }
 .paypalForm{
   margin: auto;
   text-align: center;
 }
+
 .paypalPrices{
   text-align: center;
   margin: auto;
-
+  color: #000;
 }
+
 .paymentInfo{
 text-align: center;
-font-family: 'Lucida';
+font-family: 'Lucida Grande';
+color: #FFF;
+}
+.afroBeatPic{
+  width: 525px;
 }
