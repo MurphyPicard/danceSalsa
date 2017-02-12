@@ -1,1 +1,1 @@
-console.log("JS is linked A OK USA!");
+console.log("JS is linked");
