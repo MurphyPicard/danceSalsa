@@ -18,7 +18,10 @@
         <div class="container-fluid">
             <div class="row">
                   <div class="col-md-6 pull-left secondnavcontact">
-                    <h1 class="phone"><img src="https://img.clipartfest.com/b79e9257272ff09329575841f8ace8cd_phone-clip-art-phone-images-clip-art_450-597.png" alt="phone: ">917-651-3476  /  300 West 8th Ave Manhattan</p>
+                    <p class="phone">
+                      <img src="https://img.clipartfest.com/b79e9257272ff09329575841f8ace8cd_phone-clip-art-phone-images-clip-art_450-597.png" alt="phone: ">
+                      917-651-3476  /  300 West 8th Ave Manhattan
+                    </p>
                   </div>
 
                   <div class="col-md-6 pull-right secondnavbuttons buttons1">
@@ -38,11 +41,12 @@
         <div class="container-fluid">
             <div class="row">
                   <div class="col-md-6 pull-left oneof4">
-                    <h1><a href="#home" class="scroll salsa-heading">SALSA CLASSES NYC</a></h1>
+                    <h1>
+                      <a href="#home" class="scroll salsa-heading">SALSA CLASSES NYC</a>
+                    </h1>
                   </div>
 
                   <div class="col-md-2 threeof4">
-
                   </div>
 
                   <div class="col-md-4 pull-right fourof4">
@@ -62,7 +66,11 @@
     <h1 class="setHeight firstHeader"></h1>
     <article class="mainAndSubHeader home">
       <img class="homeImage" style="width: 100%;" src="./images/mainImageSalsaclassesnyc.jpg" alt="main pic">
-      <h1 class="mainHeader homeabout">We offer salsa lessons (ON2 - NYC Style) for students with all levels of experience. You will learn how to dance salsa New York style, sweat, and have fun.</h1>
+      <h1 class="mainHeader homeabout">
+        We offer salsa lessons (ON2 - NYC Style) for students with all levels of
+         experience. You will learn how to dance salsa New York style, sweat,
+         and have fun.
+      </h1>
     <!-- <h1>TEST TEST</h1>
       <h1>5 + 9 should equal {{5+9}} if angular is working</h1>
       <p>16th dancer = {{vm.dancers[0]}}</p>
@@ -79,7 +87,10 @@
     <div id="about">
       <h1 class="setHeight"></h1>
       <h1></h1>
-      <img class="aboutImage" style="width: 80%;" src="./images/ABOUTSALSACLASSESNYC.jpg" alt="dancing pic">
+      <img class="aboutImage"
+           style="width: 80%;"
+           src="./images/ABOUTSALSACLASSESNYC.jpg"
+           alt="dancing pic">
     </div>
 
     <p style="height: 10px;" ></p>
@@ -126,21 +137,40 @@
       </p>
         <br>
       <p class="classParagraphs" >
-      <strong>8-weeks cycle</strong> - In this 8-week cycle students will have the opportunity to learn the fundamental steps and turn patterns in salsa. We will simultaneously help you build a strong overall dance foundation. You will improve your balance and posture and learn how to move your body and arms in a controlled but fluid manner. To conclude the cycle, you will learn and perform a mini-salsa choreography. Space is limited so please contact us for availability.
+      <strong>8-weeks cycle</strong> - In this 8-week cycle students will have
+      the opportunity to learn the fundamental steps and turn patterns in salsa.
+      We will simultaneously help you build a strong overall dance foundation.
+      You will improve your balance and posture and learn how to move your body
+      and arms in a controlled but fluid manner. To conclude the cycle, you will
+      learn and perform a mini-salsa choreography. Space is limited so please
+      contact us for availability.
       </p>
         <br>
       <p class="classParagraphs" >
-        <strong>LEVEL 1: ABSOLUTE BEGINNER (LEVEL 1)</strong> - This class is perfectly suited for students with no prior salsa dancing experience. You will familiarize yourself with the music, learn the basic steps and simple combinations performed solo (shines) and with a partner (turn patterns).
+        <strong>LEVEL 1: ABSOLUTE BEGINNER (LEVEL 1)</strong> - This class is
+        perfectly suited for students with no prior salsa dancing experience.
+        You will familiarize yourself with the music, learn the basic steps and
+        simple combinations performed solo (shines) and with a partner
+        (turn patterns).
       </p>
         <br>
       <p class="classParagraphs" >
-        <strong>LEVEL 2: ADVANCED BEGINNER (LEVEL 2)</strong> -  For students who have some prior salsa dance experience or have completed our beginner class. This class will help you master more challenging shines and turn patterns as well as teach you to style and incorporate body movement while dancing.
+        <strong>LEVEL 2: ADVANCED BEGINNER (LEVEL 2)</strong> -  For students
+        who have some prior salsa dance experience or have completed our
+        beginner class. This class will help you master more challenging shines
+        and turn patterns as well as teach you to style and incorporate body
+        movement while dancing.
       </p>
         <br>
       <p class="classParagraphs" >
         <strong>Movement Class</strong> -
-        This class teaches Afro-Latin movement, characterized by fluid and expressive motions and a dancer's personal interpretation of the beat. It introduces students to the typical motions of Afro-Cuban and other Latin Folklore styles while providing historical and cultural context.
-        The workshop is a great opportunity to build control over body movement, improve musical and improvisation skills, and to learn to apply this knowledge outside of the classroom and to other forms of dance.
+        This class teaches Afro-Latin movement, characterized by fluid and
+        expressive motions and a dancer's personal interpretation of the beat.
+        It introduces students to the typical motions of Afro-Cuban and other
+        Latin Folklore styles while providing historical and cultural context.
+        The workshop is a great opportunity to build control over body movement,
+        improve musical and improvisation skills, and to learn to apply this
+        knowledge outside of the classroom and to other forms of dance.
       </p>
       <!--
       <hr>
@@ -164,13 +194,15 @@
 
       <div class="pageDetails formDiv">
         <img src="./images/signupImage.jpg" alt="signup image">
-        <form class="signup-form" ng-submit="submit()" id='signup'>
+        <!-- <form onsubmit="return confirm('Do you really want to submit the form?');"> -->
+        <form class="signup-form" ng-submit="submit()" id='signup' name="signupForm">
           <input class="inputform" type="text" name="firstName"   placeholder="First Name"   value="" ng-model="formData.firstName"   ><br>
           <input class="inputform" type="text" name="lastName"    placeholder="Last Name"    value="" ng-model="formData.lastName"    ><br>
           <input class="inputform" type="text" name="phoneNumber" placeholder="Phone Number" value="" ng-model="formData.phoneNumber" ><br>
           <input class="inputform" type="text" name="email"       placeholder="Email"        value="" ng-model="formData.email"       ><br>
-          <input class="inputform" type="text" name="message"     placeholder="For private lessons, please suggest a time and date, otherwise write 'GROUP'." value="" ng-model="formData.message"     ><br>
-          <input type="submit" name="submitButton" placeholder="ara button" value="submit">
+          <input class="inputform" type="text" name="message"     placeholder="For private lessons, please suggest a time and date, otherwise write 'GROUP'." value="" ng-model="formData.message"><br>
+          <input type="submit" name="submitButton" placeholder="ara button" value="submit" onclick="clicker('message')">
+          <div id="message"></div>
         </form>
       </div>
     <br>        <!--
@@ -188,7 +220,9 @@
 
 
       <h1 id="paypal" class="setHeight"></h1>
-      <h1 class="paypalHeading">Make a payment quick & easy - Paypal</h1>
+      <h1 class="paypalHeading">
+        Make a payment quick & easy - <img class="paypalpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2000px-PayPal.svg.png" alt="">
+      </h1>
     <div class="pageDetails pageDetailspaypal">
 
       <form class="paypalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

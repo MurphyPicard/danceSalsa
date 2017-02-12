@@ -201,10 +201,18 @@ margin: 10px;
 .firstHeader{
   height: 140px;
 }
+#message{
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Lucida', Arial;
+}
 
 /******PAYPAL******/
 .paypalHeading{
   font-family: 'Lucida';
+}
+.paypalpic{
+  width: 4em;
 }
 .pageDetailspaypal{
   text-align: center;
