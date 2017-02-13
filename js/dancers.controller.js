@@ -23,7 +23,7 @@
         $http({
           method : 'POST',
           // action="http://localhost:3001/api/dancers" method="POST"
-          url    : 'https://salsaclassesnycapi.herokuapp.com/api/dancers',
+          url    : 'http://salsaclassesnycapi.herokuapp.com/api/dancers',
           data   : $scope.formData,
           // headers: {'Content-Type': 'application/x-www-form-urlencoded'}
           headers: {'Content-Type': 'application/json'}

@@ -10,7 +10,7 @@
         dancers: {},
         get: function(){
           //connecting to a backend
-          return $http.get(`https://salsaclassesnycapi.herokuapp.com/api/dancers`);
+          return $http.get(`http://salsaclassesnycapi.herokuapp.com/api/dancers`);
         }
       };
     }
