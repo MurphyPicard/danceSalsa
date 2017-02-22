@@ -27,6 +27,7 @@ body{
 }
 .container-fluid{
 margin: 10px;
+
 }
 .pull-left h1{
   margin: 0 auto;
@@ -47,16 +48,19 @@ margin: 10px;
   margin: 0 auto;
 }
 .phone{
-  font-size: 20px;
   color: #FFF;
-  font-size: .9em;
+  font-size: 1em;
   margin: 0 auto;
 
 }
 /********* buttonLinks **********/
 .buttonLinks img{
-  width: 25px;
+  width: 30px;
   margin: 0 auto;
+  margin-right: 7px;
+}
+.buttonLinks img:Hover{
+  width: 31px;
 }
 .bachata-width{
   width: 50px;
@@ -73,6 +77,7 @@ margin: 10px;
   font-weight: 700;
   font-family: 'Lucida Grande';
   text-decoration: none;
+  margin-right: 3px;
 }
 @media screen and (max-width: 870px) {
   .navbar-text .scroll{
@@ -91,7 +96,7 @@ margin: 10px;
 }
 .navbar-text A:hover{
   color: #161400;
-  font-size: 1.03em;
+  font-size: 1.2em;
 }
 @media screen and (max-width: 870px) {
   .navbar-text A:hover{
@@ -199,7 +204,7 @@ margin: 10px;
   height: 60px;
 }
 .firstHeader{
-  height: 140px;
+  height: 60px;
 }
 #message{
   color: #FFF;
@@ -242,4 +247,5 @@ color: #FFF;
 }
 .end{
   font-style: italic;
+  font-size: 2.2em;
 }
