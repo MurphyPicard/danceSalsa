@@ -1,3 +1,5 @@
+http://www.SalsaClassesNYC.com
+
 I built this website for my brother Manolo.  He is a professional Salsa
 dancer and loves to teach people how to move and express themselves.  If you
 want to change your life, learn how to Salsa!
@@ -17,4 +19,9 @@ Challenges:
 
 The two most challenging aspects to this project were designing the site exactly
 the way my brother wanted it and getting the emails to send properly while his
-password remained hidden. 
+password remained hidden.
+
+Future changes:
+
+I may utilize bootstrap a bit more to make some style changes and optimize this
+for mobile so the text doesn't seem small.
