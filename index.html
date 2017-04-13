@@ -213,7 +213,7 @@
           <input class="inputform" type="text" name="phoneNumber" placeholder="Phone Number" value="" ng-model="formData.phoneNumber" ><br>
           <input class="inputform" type="text" name="email"       placeholder="Email"        value="" ng-model="formData.email"       ><br>
           <input class="inputform" type="text" name="message"     placeholder="For private lessons, please suggest a time and date, otherwise write 'GROUP'." value="" ng-model="formData.message"><br>
-          <input type="submit" name="submitButton" placeholder="ara button" value="submit" onclick="clicker('message')">
+          <input type="submit" name="submitButton" placeholder="ara button" value="submit" onclick="clicker('message'); this.style.visibility='hidden'">
           <div id="message"></div>
         </form>
       </div>
