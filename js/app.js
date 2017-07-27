@@ -4,8 +4,8 @@ console.log("JS is linked");
 
 
 function clicker(messageTag){
-  document.getElementById(messageTag).innerHTML = "Thank you for signing up!  We'll send you a confirmation email shortly.";
-  
+  document.getElementById(messageTag).innerHTML = "Thank you for signing up!  You'll recieve an email shortly.  <hr> Don't forget to pay below. <br> (Please use the same email that you signed up with.)";
+
   // setTimeout("formSubmitter()",3000);
 }
 
