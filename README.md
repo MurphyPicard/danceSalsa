@@ -25,3 +25,5 @@ Future changes:
 
 I may utilize bootstrap a bit more to make some style changes and optimize this
 for mobile so the text doesn't seem small.
+
+Also, we will be using Stripe to collect payments and send emails all at once.
