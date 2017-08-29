@@ -64,19 +64,24 @@
                   <div class="col-md-5 pull-right fourof4">
                     <nav class="navbar">
                       <div class="container-fluid">
-                        <p class="navbar-text"><a href="#about" class="scroll">ABOUT </a></p>
+                        <p class="navbar-text"><a href="#about" class="scroll">ABOUT     </a></p>
                         <p class="navbar-text"><a href="#classes" class="scroll">CLASSES </a></p>
-                        <p class="navbar-text"><a href="#paypal" class="scroll">RATES </a></p>
-                        <p class="navbar-text"><a href="#signup" class="scroll">SIGNUP </a></p>
+                    <!--<p class="navbar-text"><a href="#paypal" class="scroll">RATES    </a></p>-->
+                        <p class="navbar-text"><a href="#paypal" class="scroll">SIGNUP   </a></p>
                       </div>
                     </nav>
                   </div>
             </div>
         </div>
     </div>
-
     <h1 class="setHeight firstHeader"></h1>
+
     <article class="mainAndSubHeader home">
+      <div class="tueThuDiv">
+        <img class="tuesdayThursday" src="./images/TuesdayClasses.jpg" alt="Tuesday Classes">
+        <img class="tuesdayThursday" src="./images/ThursdayClasses.jpg" alt="Thursday Classes">
+      </div>
+
       <img class="homeImage" style="width: 100%;" src="./images/buildingsbackgroundsalsaclassesnyc.jpg" alt="main pic">
       <h1 class="mainHeader homeabout">
         We offer salsa lessons (ON2 - NYC Style) for students with all levels of
@@ -178,14 +183,14 @@
           knowledge outside of the classroom and to other forms of dance.
         </p>
       </div>
-
+      <!--
       <div id="signup" ng-controller="submitController">
         <h1 class="setHeight"></h1>
         <img src="./images/signup.jpg" alt="signup words image">
 
         <div class="pageDetails formDiv">
           <img src="./images/signupImage.jpg" alt="signup picture image">
-          <!-- <form onsubmit="return confirm('Do you really want to submit the form?');"> -->
+
           <form class="signup-form" ng-submit="submit()" id='signupForm' name="signupForm">
             <input class="inputform" type="text" name="firstName"   placeholder="First Name"   value="" ng-model="formData.firstName"   ><br>
             <input class="inputform" type="text" name="lastName"    placeholder="Last Name"    value="" ng-model="formData.lastName"    ><br>
@@ -196,16 +201,20 @@
             <div id="message"></div>
           </form>
         </div><br>
+      </div><br>
+      -->
+
+          <!-- line below not needed now but saving just incase
+          <form onsubmit="return confirm('Do you really want to submit the form?');"> -->
+
       <!--
             <p>double check that angular is working (i did not write any names below)</p>
-
             <div class="listDancers" ng-repeat="dancer in vm.dancers">
               <p>{{$index + 1}}... {{dancer.firstName}} {{dancer.lastName}}</p>
             </div>
-
             <p>{{ formData }} FORM DATA IS WORKING</p>
       -->
-      </div><br>
+
 
       <h1 id="paypal" class="setHeight"></h1>
       <h1 class="paypalHeading">
