@@ -36,7 +36,8 @@ var Dancer = mongoose.model("Dancer", DancerSchema);
 var options = {
   server: {
     socketOptions: {
-      keepAlive: 300000, connectTimeoutMS: 30000
+      keepAlive: 300000,
+      connectTimeoutMS: 30000
     }
   },
   replset: {
