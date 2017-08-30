@@ -121,17 +121,17 @@ margin: 10px;
   width: 95%;
   background-color: rgba(150, 64, 117, .4);
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  /*margin-top: 20px;
+  margin-bottom: 20px;*/
+  /*flex-wrap: wrap;*/
 }
 .tuesdayThursday{
-  width: 49%;
+  width: 98%;
   /*height: 50px;*/
   margin: 5px auto;
-  display: flex;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 .home {
