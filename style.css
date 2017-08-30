@@ -114,7 +114,7 @@ margin: 10px;
   text-align: center;
 }
 
-.tueThuDiv{
+/*.tueThuDiv{
   display: -webkit-flex;
   display: flex;
   height: 500px;
@@ -122,20 +122,21 @@ margin: 10px;
   background-color: rgba(0, 64, 117, .4);
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 20px;*/
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 .tuesdayThursday{
   width: 75% auto;
   margin: 5px auto;
-  /*width: 98%;*/
-  /*height: 50px;*/
-  /*margin: 5px auto;*/
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-}
+}*/
+/*width: 98%;*/
+/*height: 50px;*/
+/*margin: 5px auto;*/
 
 
 
@@ -206,8 +207,9 @@ margin: 10px;
 }
 .signupNecessary{
   text-align: center;
-  font-weight: 700;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 2em;
+  font-family: 'Lucida';
 }
 .ulClasses li{
   text-align: justify;
