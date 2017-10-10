@@ -1,0 +1,22 @@
+{
+  "name": "dancesalsa",
+  "version": "1.0.0",
+  "description": "for salsaclassesnyc.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MurphyPicard/danceSalsa.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Ara Yaghsizian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MurphyPicard/danceSalsa/issues"
+  },
+  "homepage": "https://github.com/MurphyPicard/danceSalsa#readme"
+}
