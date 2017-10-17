@@ -4,6 +4,11 @@ I built this website for my brother Manolo.  He is a professional Salsa
 dancer and loves to teach people how to move and express themselves.  If you
 want to change your life, learn how to Salsa!
 
+As of 10/16/17, the style and design elements of this website will be done by my
+brother Manolo who is super interested in HTML, CSS and learning basic coding skills.
+I will assist in anything JavaScript related and also assist with basic
+functionality and general consulting.
+
 
 Screenshot of the site:
 ![alt tag](./images/Salsa.png)
